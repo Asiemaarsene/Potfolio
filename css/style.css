@@ -4,7 +4,38 @@
  a{color:rgb(239, 232, 232);
     text-decoration:none;} 
 .padding{padding-top: 30px;} 
-.navbar{height:50px;background-color:#069c2e}
+.navbar{
+    background: linear-gradient(135deg, #04b76a, #32d9b7);
+    border-radius: 40px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    padding: 10px 8px;
+    margin: 12px 8px;
+    align-items: center;
+}
+.navbar > div{
+    padding: 6px 4px;
+}
+.navbar a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 28px;
+    background: rgba(255,255,255,0.16);
+    color: #ffffff;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.navbar a:hover{
+    background: rgba(255,255,255,0.32);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+.navbar a i{
+    font-size: 1rem;
+}
 .icon-social{
         position: fixed;
         display: flex;
@@ -24,5 +55,28 @@
     }
 .background-color{background-color:#d7f8f8;}
 .find-out-more:hover{color:red}
-.find-out-more{color:rgb(0, 0, 255)}    
+.find-out-more{color:rgb(0, 0, 255)} 
+
+@media(max-width: 576px){
+    .icon-social{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar > div{
+        width: 25%;
+        text-align: center;
+        padding: 8px 0;
+    }
+    .navbar > div a{
+        display: inline-block;
+        width: 100%;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
         
