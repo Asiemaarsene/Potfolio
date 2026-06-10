@@ -1,4 +1,10 @@
- .hiremetag:hover{background-color: #069c2e;
+.projects{
+    position:absolute;
+    top:95px;
+    
+}
+
+.hiremetag:hover{background-color: #069c2e;
                             border:1px solid #069c2e;}
  a:hover{color:red;}  
  a{color:rgb(239, 232, 232);
